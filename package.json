@@ -1,0 +1,21 @@
+{
+  "name": "bucefalo-db",
+  "title": "Bucefalo DataBases",
+  "description": "Simple database access model for node.js.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/picanteverde/bucefalo-db",
+  "author": {
+    "name": "Alejandro Hernandez"
+  },
+  "main":"index",
+  "dependencies": {
+      "hiredis": ">= 0.1.14",
+      "redis": ">= 0.7.2",
+      "mysql": ">= 2.0.0-alpha2",
+      "mongodb": ">= 1.0.2"
+  },
+  "devDependencies": {
+      "mocha": ">= 1.1.0",
+      "chai": ">= 1.0.4"
+  }
+}
