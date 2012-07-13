@@ -14,17 +14,18 @@ How to use
 
 ### Using the Key Value Store
 Accessing key value store as never been so simple
-  var db = require("../index.js"),
-      dbUrl = "mysql://localhost:3306/test";
-  db.kv(dbUrl, function(db){
-      db.set("test1","value1", function(err){
-        expect(err).to.not.ok;
-          db.get("test1",function(err, value){
-          expect(value).to.equal("value1");
-          done();
+
+    var db = require("../index.js"),
+        dbUrl = "mysql://localhost:3306/test";
+    db.kv(dbUrl, function(db){
+        db.set("test1","value1", function(err){
+          expect(err).to.not.ok;
+            db.get("test1",function(err, value){
+            expect(value).to.equal("value1");
+            done();
+          });
         });
       });
-    });
 
 
 Current Drivers
